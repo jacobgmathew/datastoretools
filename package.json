@@ -1,0 +1,33 @@
+{
+  "name": "@byterain/datastoretools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/dist/Main.js",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "tsc": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint ./src ",
+    "preversion": "npm run clean && npm run tsc & npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobgmathew/datastoretools.git"
+  },
+  "author": "Jacob Mathew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobgmathew/datastoretools/issues"
+  },
+  "homepage": "https://github.com/jacobgmathew/datastoretools#readme",
+  "devDependencies": {    "prettier": "^2.5.1",
+    "typescript": "^4.5.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.5.0"
+  }
+}

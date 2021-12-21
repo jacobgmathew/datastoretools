@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "esModuleInterop":true, 
+    
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch":true,
+    "noImplicitAny":true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictFunctionTypes":true,
+    "strictPropertyInitialization":true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+
+    // Output controls.
+    "outDir": "./dist",
+    "target": "es2018",
+    "module": "commonjs",  // module system to use in generated js. commonjs is what is used by node.
+    "sourceMap": true,
+    "inlineSources": true, // otherwise sourcemaps will refer to the original ts sources, which will have to be served for resolution to work.
+    "declaration": true,   // output declaration files (.d.ts)
+
+    // Input controls.
+    "rootDir": "./src",
+    "moduleResolution": "node", // mechanism for resolving (searching for) modules.
+
+    "lib": [
+      "es2018"
+    ]
+  }
+}
